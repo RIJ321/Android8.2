@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Android8.1</string>
+    <string name="welcome">Welcome</string>
+    <string name="user_or_email">User or email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="or_sign_in">or sign in</string>
+    <string name="et_ph_or_email">Phone or number</string>
+    <string name="bn_sign_in">btn_signing</string>
+    <string name="tt_or_sign">tw_or_sign</string>
+    <string name="or_sign_with">or Sign with</string>
+    <string name="sign_up">Sign up</string>
+    <string name="venus">Venus</string>
+    <string name="saturn">Saturn</string>
+    <string name="mars">Mars</string>
+    <string name="our_planets">Our planets</string>
+</resources>

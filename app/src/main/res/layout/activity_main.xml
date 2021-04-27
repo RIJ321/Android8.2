@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mountain_backgr"
+    android:padding="30dp"
+    tools:context=".MainActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/steclo_extra_Light"
+        android:padding="10dp"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/container"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/main_container"
+        app:layout_constraintStart_toStartOf="@id/main_container"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        >
+
+
+        <EditText
+            android:id="@+id/user_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/main_background"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:hint="@string/user_or_email"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="10dp"
+            android:textColorHint="@color/light_black"
+            android:textSize="20sp"
+
+
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_login"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/main_background"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="10dp"
+            android:textColorHint="@color/light_black"
+            android:textSize="19sp"
+            app:layout_constraintTop_toBottomOf="@id/user_login"
+
+
+            />
+
+        <Button
+            android:onClick="getStart"
+            android:id="@+id/btn_signing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_background"
+            android:fontFamily="sans-serif"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/light_black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/password"
+
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/registering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_sign_in"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/main_container"
+        app:layout_constraintBottom_toBottomOf="@id/main_container"
+        android:onClick="register"
+        android:fontFamily="sans-serif"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

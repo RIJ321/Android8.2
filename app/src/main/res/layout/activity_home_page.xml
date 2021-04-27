@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="10dp"
+    tools:context=".Home_page">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/our_planets"
+        android:fontFamily="serif-monospace"
+        android:textSize="60sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:background="@drawable/btn_background"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/saturn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/after_btn_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/saturn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/jupiter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"
+            android:fontFamily="serif-monospace"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="80dp"
+            android:text="@string/saturn"
+            android:textColor="@color/light_black"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/venus_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/after_btn_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/saturn_container"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/venus"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/venus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"
+            android:fontFamily="serif-monospace"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="80dp"
+            android:text="@string/venus"
+            android:textColor="@color/light_black"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mars_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/after_btn_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/venus_container"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/mars"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/mars"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"
+            android:fontFamily="serif-monospace"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="80dp"
+            android:text="@string/mars"
+            android:textColor="@color/light_black"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
